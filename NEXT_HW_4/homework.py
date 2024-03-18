@@ -1,5 +1,6 @@
 #session4 과제
 number = int(input("숫자 게임의 최댓값을 입력해주세요:"))
+print("1부터", number, "까지의 숫자를 하나 생각하세요.")
 input("준비가 되었다면 Enter를 누르세요.")
 
 min= 1
