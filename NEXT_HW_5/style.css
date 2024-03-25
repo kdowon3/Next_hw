@@ -1,0 +1,315 @@
+.container {
+    display: block;
+    width: 270px;
+    height: 410px;
+
+    padding: 2px; /* 내부 여백 조정 */
+    box-sizing: border-box; /* 외곽선을 기준으로 크기 조정 */
+    background-color: rgba(242, 240, 240, 0.5);
+}
+
+.topbox {
+    display: flex;
+    width: 266px;
+    height: 30px;
+
+    padding: 2px; /* 내부 여백 조정 */
+    box-sizing: border-box; /* 외곽선을 기준으로 크기 조정 */
+    margin-left: 3px;
+}
+.logo1 {
+    position: relative;
+    height: 20px;
+    width: 20px;
+}
+.toss {
+    position: absolute;
+    margin-left: 25px;
+    font-weight: bold;
+    margin-top: -6px;
+    color: gray;
+}
+.smile {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-left: 200px;
+}
+.bell {
+    position: absolute;
+    height: 20px;
+    width: 18px;
+    margin-left: 235px;
+}
+.reddot {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    margin-left: 230px;
+    margin-top: -23px;
+}
+.adbox {
+    display: block;
+    width: 250px;
+    height: 100px;
+    background-color: white;
+
+    padding: 2px; /* 내부 여백 조정 */
+    box-sizing: border-box; /* 외곽선을 기준으로 크기 조정 */
+    margin-left: 5px;
+    border-radius: 13%;
+    margin-top: 0px;
+}
+.dots {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 0px;
+    height: 15px;
+}
+.tossbank {
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+.right {
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    margin-left: 225px;
+    margin-top: -10px;
+}
+.adv {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 17px;
+}
+.adtext1 {
+    position: absolute;
+    margin-left: 57px;
+    margin-top: 18px;
+    font-size: 8px;
+    color: gray;
+    font-weight: 550;
+}
+.adtext2 {
+    position: absolute;
+    margin-left: 57px;
+    margin-top: 33px;
+    font-size: 9px;
+    font-weight: 800;
+}
+.midbox {
+    display: block;
+    width: 250px;
+    height: 200px;
+    padding: 2px; /* 내부 여백 조정 */
+    box-sizing: border-box; /* 외곽선을 기준으로 크기 조정 */
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10%;
+    background-color: white;
+}
+.hanas {
+    display: flex;
+}
+.asset {
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.logo {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+    border-radius: 50%;
+}
+.hanas .logo {
+    margin-top: 30px;
+}
+.banktxt {
+    position: absolute;
+    font-size: 8px;
+    margin-left: 55px;
+}
+
+.hanas .banktxt {
+    margin-top: 30px;
+}
+
+.won {
+    position: absolute;
+    font-size: 9px;
+    font-weight: bold;
+    margin-left: 55px;
+}
+.hanas .won {
+    margin-top: 40px;
+}
+.send {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    margin-left: 200px;
+}
+.hanas .send {
+    margin-top: 35px;
+}
+.toss1 .logo {
+    margin-top: 50px;
+}
+
+.toss1 .banktxt {
+    margin-top: 50px;
+}
+
+.toss1 .won {
+    margin-top: 60px;
+}
+
+.toss1 .send {
+    margin-top: 55px;
+}
+
+.kbbank .logo {
+    margin-top: 90px;
+}
+
+.kbbank .banktxt {
+    margin-top: 90px;
+}
+
+.kbbank .won {
+    margin-top: 100px;
+}
+
+.kbbank .send {
+    margin-top: 95px;
+}
+
+.ibkbank .logo {
+    margin-top: 130px;
+}
+
+.ibkbank .banktxt {
+    margin-top: 130px;
+}
+
+.ibkbank .won {
+    margin-top: 140px;
+}
+
+.ibkbank .send {
+    margin-top: 135px;
+}
+
+.bottombox1 {
+    display: flex;
+    width: 266px;
+    height: 55px;
+    padding: 2px; /* 내부 여백 조정 */
+    box-sizing: border-box; /* 외곽선을 기준으로 크기 조정 */
+    margin-top: 5px;
+    border-radius: 20%;
+    background-color: white;
+}
+
+.spend {
+    position: relative;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.spending {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    margin-left: 200px;
+    margin-top: 5px;
+}
+
+.bottombox2 {
+    display: block;
+    width: 270px;
+    height: 33px;
+    border-top: 0.1px solid rgb(228, 225, 225);
+    box-sizing: border-box;
+    margin-left: -2px;
+    margin-top: -20px;
+    background-color: white;
+}
+.icons {
+    display: inline;
+    width: 270px;
+    height: 20px;
+}
+.icon1 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+}
+.icon2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+}
+.icon3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 80px;
+    margin-top: 2px;
+}
+.icon4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 130px;
+}
+.icon5 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 180px;
+}
+.texts {
+    display: flex;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.text1 {
+    position: relative;
+    margin-left: 35px;
+}
+
+.text2 {
+    position: absolute;
+    margin-left: 82px;
+}
+
+.text3 {
+    position: absolute;
+    margin-left: 132px;
+}
+
+.text4 {
+    position: absolute;
+    margin-left: 180px;
+}
+
+.text5 {
+    position: absolute;
+    margin-left: 231px;
+}
