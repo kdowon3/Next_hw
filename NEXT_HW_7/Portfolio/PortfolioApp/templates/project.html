@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'project.css' %}" />
+        <title>Dowon Kim</title>
+    </head>
+    <body>
+        <div class="name">Dowon Kim</div>
+        <div class="tags">
+            <h2 class="life">Life</h2>
+            <h2 class="prj">Project</h2>
+            <h2 class="me">About ME</h2>
+            <h2 class="ins">Instagram</h2>
+        </div>
+        <div class="contents">
+            <img src="{% static 'img/first.png' %}" class="first">
+            <img src="{% static 'img/secon.png' %}" class="second">
+            <img src="{% static 'img/third.png' %}" class="third">
+        </div>
+        
+    </body>
+</html>

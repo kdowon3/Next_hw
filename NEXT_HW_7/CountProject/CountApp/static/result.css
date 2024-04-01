@@ -1,0 +1,42 @@
+body {
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.text1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 400px;
+    position: relative;
+    margin-top: 200px;
+    align-self: center;
+}
+
+.text2 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+    margin-left: 550px;
+    margin-top: 300px;
+}
+
+.text3 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(207, 170, 101);
+    margin-left: 550px;
+    margin-top: 350px;
+}
+
+.text4 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: skyblue;
+    margin-left: 550px;
+    margin-top: 400px;
+}
