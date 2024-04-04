@@ -1,0 +1,50 @@
+body {
+        background-image: url('/static/background.jpg');
+        background-size: cover;
+        background-position: center;
+}
+
+.whole1 {
+    font-size: 50px;
+    color: green;
+    margin-left: 560px;
+}
+
+.whole2 {
+    font-size: 25px;
+    color: gray;
+    margin-left: 610px;
+}
+
+.whole3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 630px;
+}
+
+.wholelist {
+    font-weight: bold;
+    margin-left: 610px;
+    font-size: 20px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.write1 {
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    margin-left: 630px;
+}
+
+.category1 {
+    font-size: 30px;
+    margin-left: 570px;
+}
+
+.category2 {
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    margin-left: 600px;
+}

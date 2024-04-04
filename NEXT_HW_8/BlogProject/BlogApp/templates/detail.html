@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}"/>
+    <title>Article Detail</title>
+</head>
+<body>
+    <h2 class="detail1">글 상세 페이지</h2>
+    <div>
+        <h3 class="detail2">제목</h3>
+        <div class="detail3">{{ article.title }}</div>
+    </div>
+    <div>
+        <h3 class="detail4">내용</h3>
+        <div class="detail5">{{ article.content }}</div>
+    </div>
+    <div>
+        <h3 class="detail6">카테고리</h3>
+        <div class="detail7">{{ article.category }}</div>
+    </div>
+    <div>
+        <h3 class="detail8">작성 시각</h3>
+        <div class="detail9">{{ article.created_at }}</div>
+    </div>
+    <a href="{% url 'list' %}" class="detail10">전체 목록으로 돌아가기</a>
+</body>
+</html>

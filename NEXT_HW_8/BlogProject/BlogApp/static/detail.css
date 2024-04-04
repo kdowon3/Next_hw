@@ -1,0 +1,50 @@
+body {
+    background-image: url('/static/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.detail1 {
+    margin-left: 38%;
+    font-size: 50px;
+}
+
+.detail2 {
+    margin-left: 46%;
+    font-size: 25px;
+}
+
+.detail3 {
+    margin-left: 46%;
+    font-size: 18px;
+}
+
+.detail4 {
+    margin-left: 46%;
+    font-size: 25px;
+}
+
+.detail5 {
+    margin-left: 46%;
+    font-size: 18px;
+}
+
+.detail6 {
+    margin-left: 46%;
+    font-size: 20px;
+}
+.detail7 {
+    margin-left: 46%;
+    font-weight: bold;
+}
+.detail8 {
+    margin-left: 47%;
+}
+.detail9 {
+    margin-left: 44%;
+}
+.detail10 {
+    margin-left: 44%;
+    text-decoration: none;
+    color: black;
+}
