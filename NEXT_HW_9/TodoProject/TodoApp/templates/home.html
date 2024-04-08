@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {% load static %}
+        <link rel="stylesheet" href="{% static '/home.css' %}" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 class="home1">To-do 리스트</h1>
+        <div>
+            <ul>
+                {% for post in posts %}
+                <li class="home2">
+                    <div><a href="{% url 'detail' post.pk %}">{{ post.title }}</a> {{post.deadline}}</div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <a href="{% url 'new' %}" class="home3">글 작성하기</a>
+    </body>
+</html>

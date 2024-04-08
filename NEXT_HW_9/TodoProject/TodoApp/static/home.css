@@ -1,0 +1,33 @@
+body {
+    background-image: url('/static/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home1 {
+    font-size: 50px;
+    color: gray;
+    margin-left: 40%;
+}
+
+.home2 {
+    margin-left: 40%;
+    font-size: 25px;
+}
+
+.li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+ul {
+    line-height: 3; /* 원하는 간격 값으로 조정 */
+}
+
+.home3 {
+    margin-top: 300px;
+    font-size: 20px;
+    margin-left: 47%;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
