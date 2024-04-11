@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'list.css' %}"/>
+{% endblock css %}
+        <title>글 전체 목록</title>
+    </head>
+    <body>
+        {% block content %}
+        <h2 class="whole1">글 전체 목록</h2>
+        <p class="whole2">글 전체 갯수: {{ posts.count }}</p>
+        <p class="whole3">전체 글 목록 ↓</p>
+        <ul class="wholelist">
+            {% for post in posts %}
+            <li><a href="{% url 'detail' post.pk %}">{{ post.title }}</a></li>
+            {% empty %}
+            <li>게시글이 없습니다.</li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'new' %}" class="write1">글 쓰러 가기</a>
+        <h2 class="category1">카테고리</h2>
+        <ul class="category2">
+            {% for category, count in category_counts.items %}
+            <li><a href="{% url 'category_board' category %}">{{ category }}</a>: 글 갯수 {{ count }}</li>
+            {% endfor %}
+        </ul>
+    {% endblock content %}
+    </body>
+</html>

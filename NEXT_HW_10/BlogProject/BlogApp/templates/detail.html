@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}"/>
+{% endblock css %}
+<title>Post Detail</title>
+</head>
+<body>
+    {% block content %}
+    <h2 class="detail1">글 상세 페이지</h2>
+    <div>
+        <h3 class="detail2">제목</h3>
+        <div class="detail3">{{ post.title }}</div>
+    </div>
+    <div>
+        <h3 class="detail4">내용</h3>
+        <div class="detail5">{{ post.content }}</div>
+    </div>
+    <div>
+        <h3 class="detail6">카테고리</h3>
+        <div class="detail7">{{ post.category }}</div>
+    </div>
+    <div>
+        <h3 class="detail8">작성 시각</h3>
+        <div class="detail9">{{ post.created_at }}</div>
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="content" placeholder="댓글을 입력해주세요" class="detail1"/>
+        <button type="submit">작성하기</button>
+    </form>
+    {% for comment in post.comments.all %}
+    <div>
+        <li class="detail13">{{comment.content}} <a href="{% url 'delete-comment' post.pk comment.pk %}">삭제</a></li>
+        <!-- Display replies -->
+        {% for reply in comment.replies.all %}
+        <ul>
+            <li class="detail14">{{ reply.content }}<a href="{% url 'delete-reply' reply.pk %}">삭제</a></li>
+        </ul>
+        {% endfor %}
+        <!-- Add reply form for each comment -->
+        <form method="POST" action="{% url 'add_reply' post_pk=post.pk comment_pk=comment.pk %}">
+            {% csrf_token %}
+            <input type="text" name="reply_content" placeholder="대댓글을 입력해주세요" class="detail15"/>
+            <button type="submit" class="detail16">작성하기</button>
+        </form>
+    </div>
+    {% endfor %}
+    <a href="{% url 'list' %}" class="detail10">전체 목록으로 돌아가기</a>
+    {% endblock content %}
+</body>
+</html>

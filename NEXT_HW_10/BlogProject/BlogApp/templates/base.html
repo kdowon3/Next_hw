@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+    {% block css %}
+    {% endblock css%}
+    <title>Document</title>
+</head>
+<body>
+    {% block content%}
+    {% endblock content %}
+</body>
+<footer>
+    <div class="footer-content">
+        <p>김도원의 넥스트 Session10 과제입니다</p>
+        <p>email:dowon8849@gmail.com, phone:010-9296-8849</p>
+    </div>
+</footer>
+</html>

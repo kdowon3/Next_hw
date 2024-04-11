@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'new.css' %}"/>
+{% endblock css %}
+        <title>New Article</title>
+    </head>
+    <body>
+        {% block content %}
+        <form action="{% url 'new' %}" method="post">
+            {% csrf_token %}
+            <div>
+                <div class="new1">글 제목</div>
+                <input type="text" name="title" class="new2" />
+            </div>
+            <div>
+                <div class="new3">글 내용</div>
+                <textarea name="content" cols="30" rows="10" class="new4"></textarea>
+            </div>
+            <div>
+                <div class="new5">카테고리</div>
+                <select name="category" class="new6">
+                    <option value="hobby">취미</option>
+                    <option value="food">음식</option>
+                    <option value="programming">프로그래밍</option>
+                </select>
+            </div>
+            <button type="submit" class="new7">작성 완료</button>
+        </form>
+        {% endblock content %}
+    </body>
+</html>
