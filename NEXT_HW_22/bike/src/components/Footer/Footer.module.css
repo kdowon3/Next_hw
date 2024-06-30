@@ -1,0 +1,21 @@
+/* src/components/Footer/Footer.module.css */
+.footerContainer {
+    background-color: #1b5e20;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerContainer p {
+    margin: 0;
+}
+
+.footerLinks a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footerLinks a:hover {
+    text-decoration: underline;
+}

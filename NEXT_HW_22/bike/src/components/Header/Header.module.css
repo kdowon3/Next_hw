@@ -1,0 +1,27 @@
+/* src/components/Header/Header.module.css */
+.headerContainer {
+    background-color: #1b5e20;
+    padding: 10px 0;
+}
+
+.headerContainer h1 {
+    color: white;
+    margin: 0;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.navLinks a:hover {
+    text-decoration: underline;
+}
